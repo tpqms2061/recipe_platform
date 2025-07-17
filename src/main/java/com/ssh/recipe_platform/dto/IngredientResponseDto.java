@@ -1,5 +1,6 @@
 package com.ssh.recipe_platform.dto;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,8 +10,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class RecipeResponseDto {
+public class IngredientResponseDto {
     private Long id;
-    private String title;
-    private String description;
+    private String name;
 }
