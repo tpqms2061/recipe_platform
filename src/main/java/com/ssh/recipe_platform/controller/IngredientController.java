@@ -47,7 +47,7 @@ public class IngredientController {
         return ResponseEntity.noContent().build();
     }
 
-    @PutMapping("{id}")
+    @PutMapping("/{id}")
     public IngredientResponseDto update(@PathVariable Long id, @Validated @RequestBody IngredientDto dto) {
         return ingredientService.update(id, dto);
     }
